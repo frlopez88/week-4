@@ -1,0 +1,15 @@
+info:
+  name: delete patients
+  type: http
+  seq: 1
+
+http:
+  method: DELETE
+  url: http://127.0.0.1:5000/patients/1298-12902-123
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

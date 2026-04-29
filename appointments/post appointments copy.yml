@@ -1,0 +1,23 @@
+info:
+  name: post appointments copy
+  type: http
+  seq: 3
+
+http:
+  method: POST
+  url: http://127.0.0.1:5000/appointments
+  body:
+    type: json
+    data: |-
+      {
+        "status" : "Created",
+        "appointment_date" : "2026-04-29T14:00:00-06:00",
+        "ssn": "1298-12902-123", 
+        "staff_id" : 3
+      }
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

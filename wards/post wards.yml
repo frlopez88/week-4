@@ -1,0 +1,20 @@
+info:
+  name: post wards
+  type: http
+
+http:
+  method: POST
+  url: http://127.0.0.1:5000/wards
+  body:
+    type: json
+    data: |-
+      {
+        "ward_name": "maternity"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

@@ -1,0 +1,21 @@
+info:
+  name: post doctors
+  type: http
+
+http:
+  method: POST
+  url: http://127.0.0.1:5000/doctors
+  body:
+    type: json
+    data: |-
+      {
+        "name": "Mario Dr.", 
+        "medical_speciality" : "Cardiology"
+      }
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5

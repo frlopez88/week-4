@@ -1,0 +1,19 @@
+info:
+  name: delete doctor
+  type: http
+  seq: 7
+
+http:
+  method: DELETE
+  url: http://127.0.0.1:5000/doctors/1
+  body:
+    type: json
+    data: ""
+  auth: inherit
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+​
